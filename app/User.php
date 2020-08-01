@@ -36,4 +36,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function projects()
+    {
+        return $this->hasMany(Project::class, 'owner_id');
+        //по дефолтным конвеншенам ларка ищет projects.user_id
+        //но так как мы не по стандарту прописали колонку owner_id то мы просто тут допишем ее
+    }
 }
