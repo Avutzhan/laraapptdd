@@ -15,6 +15,11 @@ class ProjectController extends Controller
 
     }
 
+    public function create()
+    {
+        return view('projects.create');
+    }
+
     public function show(Project $project)
     {
 
@@ -35,9 +40,6 @@ class ProjectController extends Controller
             'description' => 'required'
         ]);
 
-//        $attributes['owner_id'] = auth()->id();
-
-        //refactoring
         auth()->user()->projects()->create($attributes);
 
         return redirect('/projects');
