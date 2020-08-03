@@ -16,7 +16,7 @@
 
 
         @empty
-            <div>No projects yet.</div>
+            <div class="ml-3">No projects yet.</div>
         @endforelse
     </main>
 

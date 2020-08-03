@@ -22,12 +22,8 @@ class ProjectController extends Controller
 
     public function show(Project $project)
     {
-
-//        if ( auth()->id() !== (int) $project->owner_id ) {
         if ( auth()->user()->isNot($project->owner)) {
             abort(403);
-            //you can do anything redirect abort and do some logic
-            //you can check if user can see or not here in method or on middleware or on web routes and so on
         }
 
         return view('projects.show', compact('project'));
@@ -40,8 +36,8 @@ class ProjectController extends Controller
             'description' => 'required'
         ]);
 
-        auth()->user()->projects()->create($attributes);
+        $project = auth()->user()->projects()->create($attributes);
 
-        return redirect('/projects');
+        return redirect($project->path());
     }
 }
