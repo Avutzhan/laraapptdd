@@ -18047,6 +18047,15 @@ video {
   background-color: #47cdff;
 }
 
+.card {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -87458,4 +87467,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-
