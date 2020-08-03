@@ -18033,6 +18033,20 @@ video {
           animation: bounce 1s infinite;
 }
 
+.button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 7px 0 #b0eaff;
+  background-color: #47cdff;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -87444,3 +87458,4 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
