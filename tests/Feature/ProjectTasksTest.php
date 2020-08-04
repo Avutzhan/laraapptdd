@@ -40,10 +40,6 @@ class ProjectTasksTest extends TestCase
 
         $project = ProjectFactory::withTasks(1)->create();
 
-//        $project = factory('App\Project')->create();
-//
-//        $task = $project->addTask('Test Task');
-
         $this->patch($project->tasks->first()->path(), ['body' => 'changed'])
             ->assertStatus(403);
 
@@ -53,13 +49,6 @@ class ProjectTasksTest extends TestCase
     /** @test **/
     public function a_project_can_have_tasks()
     {
-//        $this->signIn();
-//
-//
-//        $project = auth()->user()->projects()->create(
-//            factory(Project::class)->raw()
-//        );
-//
         $project = ProjectFactory::create();
 
         $this->actingAs($project->owner)
@@ -72,24 +61,9 @@ class ProjectTasksTest extends TestCase
     /** @test **/
     public function a_task_can_be_updated()
     {
-//        $project = app(ProjectFactory::class)
-////            ->ownedBy($this->signIn())
-//            ->withTasks(1)
-//            ->create();
-
         $project = ProjectFactory::withTasks(1)->create();
-//тут момент мы не можем юзать withTasks потому что метод не статический
-        //но если мы добавим в начали пути фасад то мы сможем юзать его
-
-
-//        $project = auth()->user()->projects()->create(
-//            factory(Project::class)->raw()
-//        );
-//
-//        $task = $project->addTask('Test Task');
 
         $this->actingAs($project->owner)
-//            ->patch($project->path() . '/tasks/' . $project->tasks->first()->id, [
             ->patch($project->tasks->first()->path(), [
             'body' => 'changed',
             'completed' => true
@@ -105,12 +79,6 @@ class ProjectTasksTest extends TestCase
     /** @test **/
     public function a_task_requires_a_body()
     {
-//        $this->signIn();
-//
-//        $project = auth()->user()->projects()->create(
-//            factory(Project::class)->raw()
-//        );
-
         $project = ProjectFactory::create();
 
         $attributes = factory('App\Task')->raw(['body' => '']);

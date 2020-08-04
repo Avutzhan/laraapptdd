@@ -43,8 +43,6 @@ class ManageProjectsTest extends TestCase
 
         $responce->assertRedirect($project->path());
 
-//        $this->assertDatabaseHas('projects', $attributes);
-
         $this->get($project->path())
             ->assertSee($attributes['title'])
             ->assertSee($attributes['description'])
@@ -54,12 +52,6 @@ class ManageProjectsTest extends TestCase
     /** @test **/
     public function a_user_can_update_a_project()
     {
-//        $this->signIn();
-//
-//        $this->withoutExceptionHandling();
-//
-//        $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
-
         $project = ProjectFactory::create();
 
         $this->actingAs($project->owner)
@@ -72,12 +64,6 @@ class ManageProjectsTest extends TestCase
     /** @test **/
     public function a_user_can_view_their_a_project()
     {
-//        $this->signIn();
-//
-////        $this->withoutExceptionHandling();
-//
-//        $project = factory('App\Project')->create(['owner_id' => auth()->id()]);
-
         $project = ProjectFactory::create();
 
         $this->actingAs($project->owner)
