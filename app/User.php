@@ -39,7 +39,10 @@ class User extends Authenticatable
 
     public function projects()
     {
-        return $this->hasMany(Project::class, 'owner_id');
+        return $this->hasMany(Project::class, 'owner_id')->latest('updated_at');
+        //orderBy('updated_at', 'desc')
+        //orderByDesc('updated_at');
+        //latest('updated_at') '//same things
         //по дефолтным конвеншенам ларка ищет projects.user_id
         //но так как мы не по стандарту прописали колонку owner_id то мы просто тут допишем ее
     }
