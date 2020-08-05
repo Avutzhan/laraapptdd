@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateProjectRequest;
 use App\Project;
 use Illuminate\Http\Request;
 
@@ -39,21 +40,9 @@ class ProjectController extends Controller
         return view('projects.edit', compact('project'));
     }
 
-    public function update(Project $project)
+    public function update(UpdateProjectRequest $form)
     {
-        $this->authorize('update', $project);
-
-        $project->update($this->validateRequest());
-
-        return redirect($project->path());
+        return redirect($form->save()->path());
     }
 
-    public function validateRequest()
-    {
-        return request()->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'notes' => 'min:3'
-        ]);
-    }
 }
