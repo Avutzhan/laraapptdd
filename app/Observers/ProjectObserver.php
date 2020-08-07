@@ -28,5 +28,13 @@ class ProjectObserver
         $project->recordActivity('updated');
     }
 
+    /**
+     * @param Project $project
+     */
+    public function updating(Project $project)
+    {
+        $project->old = $project->getOriginal();
+    }
+
 
 }
