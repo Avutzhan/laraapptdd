@@ -6,11 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
-//    use TriggersActivity;
-// we can make new trate for dinamically creating activity records but its now very hard to made
-// we will add new trait and delete observers
-// but using observers very simple
-
     protected $guarded = [];
 
     public function path()
@@ -35,7 +30,7 @@ class Project extends Model
 
     public function activity()
     {
-        return $this->hasMany(Activity::class);
+        return $this->hasMany(Activity::class)->latest();
     }
 
     public function recordActivity($description)
