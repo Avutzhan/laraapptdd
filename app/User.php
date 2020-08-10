@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -40,10 +41,21 @@ class User extends Authenticatable
     public function projects()
     {
         return $this->hasMany(Project::class, 'owner_id')->latest('updated_at');
-        //orderBy('updated_at', 'desc')
-        //orderByDesc('updated_at');
-        //latest('updated_at') '//same things
-        //по дефолтным конвеншенам ларка ищет projects.user_id
-        //но так как мы не по стандарту прописали колонку owner_id то мы просто тут допишем ее
+    }
+
+    public function accessibleProjects()
+    {
+        return Project::where('owner_id', $this->id)
+               ->orWhereHas('members', function ($query) {
+                   $query->where('user_id', $this->id);
+               })
+               ->get();
+//        $projectsCreated = $this->projects;
+//
+//        $ids = DB::table('project_members')->where('user_id', $this->id)->pluck('project_id');
+//
+//        $projectsShareWith = Project::find($ids);
+//
+//        return $projectsCreated->merge($projectsShareWith);
     }
 }
