@@ -11,11 +11,3 @@ $factory->define(App\Project::class, function (Faker $faker) {
 
     ];
 });
-
-//php artisan make:factory ProjectFactory --model="App\Project"
-//tinker
-//factory('App\Project')->make()
-//make не сохраняет в базе возвращает обьект
-//create сохраняет в базе обьект
-//raw массив
-// App\Project::forceCreate(['title' => 'My project', 'description' => 'Lorem ipsum', 'owner_id' => 10]);

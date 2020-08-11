@@ -32,17 +32,6 @@ class ManageProjectsTest extends TestCase
 
         $this->get('/projects/create')->assertStatus(200);
 
-//        $attributes = [
-//            'title' => $this->faker->sentence,
-//            'description' => str_limit($this->faker->sentence, 50),
-//            'notes' => 'General notes here...'
-//        ];
-
-//        $project = Project::where($attributes)->first();
-
-//        $responce->assertRedirect($project->path());
-
-//        $this->get($project->path())
         $this->followingRedirects()->post('/projects', $attributes = factory(Project::class)->raw(/*['owner_id' => auth()->id()]*/))
             ->assertSee($attributes['title'])
             ->assertSee($attributes['description'])
@@ -52,14 +41,8 @@ class ManageProjectsTest extends TestCase
     /** @test **/
     public function a_user_can_see_all_projects_they_have_been_invited_to_on_their_dashboard()
     {
-        //given we are signed in
-
-
-        //and we have been inveted to a project that was not by created by us
         $project = tap(ProjectFactory::create())->invite($this->signIn());
-        //tap вернет нам проект а инвайт может и не вернуть
-        //when i visit my dashboard
-        //i should see that project
+
         $this->get('projects')
             ->assertSee($project->title);
     }
