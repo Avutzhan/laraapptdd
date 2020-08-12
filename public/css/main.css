@@ -1266,6 +1266,22 @@ video {
   border-color: var(--header-background-color);
 }
 
+.divide-accent-normal > :not(template) ~ :not(template) {
+  border-color: var(--text-accent-color);
+}
+
+.divide-accent-light > :not(template) ~ :not(template) {
+  border-color: var(--text-accent-light-color);
+}
+
+.divide-muted-normal > :not(template) ~ :not(template) {
+  border-color: var(--text-muted-color);
+}
+
+.divide-muted-light > :not(template) ~ :not(template) {
+  border-color: var(--text-muted-light-color);
+}
+
 .divide-gray-100 > :not(template) ~ :not(template) {
   --divide-opacity: 1;
   border-color: #f7fafc;
@@ -1930,6 +1946,22 @@ video {
   background-color: var(--text-default-color);
 }
 
+.bg-accent-normal {
+  background-color: var(--text-accent-color);
+}
+
+.bg-accent-light {
+  background-color: var(--text-accent-light-color);
+}
+
+.bg-muted-normal {
+  background-color: var(--text-muted-color);
+}
+
+.bg-muted-light {
+  background-color: var(--text-muted-light-color);
+}
+
 .bg-gray-100 {
   --bg-opacity: 1;
   background-color: #f7fafc;
@@ -2510,6 +2542,22 @@ video {
   background-color: var(--text-default-color);
 }
 
+.hover\:bg-accent-normal:hover {
+  background-color: var(--text-accent-color);
+}
+
+.hover\:bg-accent-light:hover {
+  background-color: var(--text-accent-light-color);
+}
+
+.hover\:bg-muted-normal:hover {
+  background-color: var(--text-muted-color);
+}
+
+.hover\:bg-muted-light:hover {
+  background-color: var(--text-muted-light-color);
+}
+
 .hover\:bg-gray-100:hover {
   --bg-opacity: 1;
   background-color: #f7fafc;
@@ -3088,6 +3136,22 @@ video {
 
 .focus\:bg-default:focus {
   background-color: var(--text-default-color);
+}
+
+.focus\:bg-accent-normal:focus {
+  background-color: var(--text-accent-color);
+}
+
+.focus\:bg-accent-light:focus {
+  background-color: var(--text-accent-light-color);
+}
+
+.focus\:bg-muted-normal:focus {
+  background-color: var(--text-muted-color);
+}
+
+.focus\:bg-muted-light:focus {
+  background-color: var(--text-muted-light-color);
 }
 
 .focus\:bg-gray-100:focus {
@@ -3806,6 +3870,22 @@ video {
   border-color: var(--header-background-color);
 }
 
+.border-accent-normal {
+  border-color: var(--text-accent-color);
+}
+
+.border-accent-light {
+  border-color: var(--text-accent-light-color);
+}
+
+.border-muted-normal {
+  border-color: var(--text-muted-color);
+}
+
+.border-muted-light {
+  border-color: var(--text-muted-light-color);
+}
+
 .border-gray-100 {
   --border-opacity: 1;
   border-color: #f7fafc;
@@ -4382,6 +4462,22 @@ video {
   border-color: var(--header-background-color);
 }
 
+.hover\:border-accent-normal:hover {
+  border-color: var(--text-accent-color);
+}
+
+.hover\:border-accent-light:hover {
+  border-color: var(--text-accent-light-color);
+}
+
+.hover\:border-muted-normal:hover {
+  border-color: var(--text-muted-color);
+}
+
+.hover\:border-muted-light:hover {
+  border-color: var(--text-muted-light-color);
+}
+
 .hover\:border-gray-100:hover {
   --border-opacity: 1;
   border-color: #f7fafc;
@@ -4956,6 +5052,22 @@ video {
 
 .focus\:border-header:focus {
   border-color: var(--header-background-color);
+}
+
+.focus\:border-accent-normal:focus {
+  border-color: var(--text-accent-color);
+}
+
+.focus\:border-accent-light:focus {
+  border-color: var(--text-accent-light-color);
+}
+
+.focus\:border-muted-normal:focus {
+  border-color: var(--text-muted-color);
+}
+
+.focus\:border-muted-light:focus {
+  border-color: var(--text-muted-light-color);
 }
 
 .focus\:border-gray-100:focus {
@@ -8783,6 +8895,70 @@ video {
   color: var(--text-default-color);
 }
 
+.placeholder-accent-normal::-moz-placeholder {
+  color: var(--text-accent-color);
+}
+
+.placeholder-accent-normal:-ms-input-placeholder {
+  color: var(--text-accent-color);
+}
+
+.placeholder-accent-normal::-ms-input-placeholder {
+  color: var(--text-accent-color);
+}
+
+.placeholder-accent-normal::placeholder {
+  color: var(--text-accent-color);
+}
+
+.placeholder-accent-light::-moz-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-accent-light:-ms-input-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-accent-light::-ms-input-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-accent-light::placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-muted-normal::-moz-placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted-normal:-ms-input-placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted-normal::-ms-input-placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted-normal::placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted-light::-moz-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.placeholder-muted-light:-ms-input-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.placeholder-muted-light::-ms-input-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.placeholder-muted-light::placeholder {
+  color: var(--text-muted-light-color);
+}
+
 .placeholder-gray-100::-moz-placeholder {
   --placeholder-opacity: 1;
   color: #f7fafc;
@@ -11101,6 +11277,70 @@ video {
 
 .focus\:placeholder-default:focus::placeholder {
   color: var(--text-default-color);
+}
+
+.focus\:placeholder-accent-normal:focus::-moz-placeholder {
+  color: var(--text-accent-color);
+}
+
+.focus\:placeholder-accent-normal:focus:-ms-input-placeholder {
+  color: var(--text-accent-color);
+}
+
+.focus\:placeholder-accent-normal:focus::-ms-input-placeholder {
+  color: var(--text-accent-color);
+}
+
+.focus\:placeholder-accent-normal:focus::placeholder {
+  color: var(--text-accent-color);
+}
+
+.focus\:placeholder-accent-light:focus::-moz-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-accent-light:focus::-ms-input-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-accent-light:focus::placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-muted-normal:focus::-moz-placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted-normal:focus:-ms-input-placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted-normal:focus::-ms-input-placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted-normal:focus::placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted-light:focus::-moz-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.focus\:placeholder-muted-light:focus::-ms-input-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.focus\:placeholder-muted-light:focus::placeholder {
+  color: var(--text-muted-light-color);
 }
 
 .focus\:placeholder-gray-100:focus::-moz-placeholder {
@@ -13738,6 +13978,22 @@ video {
   color: var(--text-default-color);
 }
 
+.text-accent-normal {
+  color: var(--text-accent-color);
+}
+
+.text-accent-light {
+  color: var(--text-accent-light-color);
+}
+
+.text-muted-normal {
+  color: var(--text-muted-color);
+}
+
+.text-muted-light {
+  color: var(--text-muted-light-color);
+}
+
 .text-gray-100 {
   --text-opacity: 1;
   color: #f7fafc;
@@ -14318,6 +14574,22 @@ video {
   color: var(--text-default-color);
 }
 
+.hover\:text-accent-normal:hover {
+  color: var(--text-accent-color);
+}
+
+.hover\:text-accent-light:hover {
+  color: var(--text-accent-light-color);
+}
+
+.hover\:text-muted-normal:hover {
+  color: var(--text-muted-color);
+}
+
+.hover\:text-muted-light:hover {
+  color: var(--text-muted-light-color);
+}
+
 .hover\:text-gray-100:hover {
   --text-opacity: 1;
   color: #f7fafc;
@@ -14896,6 +15168,22 @@ video {
 
 .focus\:text-default:focus {
   color: var(--text-default-color);
+}
+
+.focus\:text-accent-normal:focus {
+  color: var(--text-accent-color);
+}
+
+.focus\:text-accent-light:focus {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:text-muted-normal:focus {
+  color: var(--text-muted-color);
+}
+
+.focus\:text-muted-light:focus {
+  color: var(--text-muted-light-color);
 }
 
 .focus\:text-gray-100:focus {
@@ -18377,19 +18665,49 @@ video {
           animation: bounce 1s infinite;
 }
 
+.theme-light {
+  --page-background-color: #f5f6f9;
+  --card-background-color: white;
+  --button-background-color: #47cdff;
+  --header-background-color: white;
+  --text-default-color: #222;
+  --text-accent-color: #47cdff;
+  --text-accent-light-color: #8ae2fe;
+  --text-muted-color: rgba(0, 0, 0, 0.3);
+  --text-muted-light-color: rgba(255, 255, 255, 0.1);
+  --text-muted-light-color: #e1e6e8;
+}
+
+.theme-dark {
+  --page-background-color: #17181e;
+  --card-background-color: #1f2027;
+  --button-background-color: #59b6f9;
+  --header-background-color: #1f2027;
+  --text-default-color: #fff;
+  --text-muted-color: rgba(255, 255, 255, 0.5);
+  --text-muted-light-color: rgba(255, 255, 255, 0.3);
+  --text-accent-color: #47cdff;
+  --text-accent-light-color: #8ae2fe;
+}
+
 .button {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
+  background-color: var(--button-background-color);
+  text-decoration: none;
   border-radius: 1.25rem;
   font-size: 0.875rem;
-  background-color: var(--button-background-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: white;
+}
+
+.theme-light .button {
   box-shadow: 0 2px 7px 0 #b0eaff;
-  /*background-color: #47cdff;*/
+}
+
+.theme-dark .button {
+  box-shadow: 0 2px 7px 0 #00658b;
 }
 
 .card {
@@ -18397,7 +18715,16 @@ video {
   padding: 1.25rem;
   border-radius: 1.25rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+body,
+button {
   color: var(--text-default-color);
+}
+
+.section {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .theme-light {
@@ -18999,6 +19326,22 @@ video {
 
   .sm\:divide-header > :not(template) ~ :not(template) {
     border-color: var(--header-background-color);
+  }
+
+  .sm\:divide-accent-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-color);
+  }
+
+  .sm\:divide-accent-light > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:divide-muted-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:divide-muted-light > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-light-color);
   }
 
   .sm\:divide-gray-100 > :not(template) ~ :not(template) {
@@ -19665,6 +20008,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .sm\:bg-accent-normal {
+    background-color: var(--text-accent-color);
+  }
+
+  .sm\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:bg-muted-normal {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .sm\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -20245,6 +20604,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .sm\:hover\:bg-accent-normal:hover {
+    background-color: var(--text-accent-color);
+  }
+
+  .sm\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:bg-muted-normal:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .sm\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -20823,6 +21198,22 @@ video {
 
   .sm\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:bg-accent-normal:focus {
+    background-color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:bg-muted-normal:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .sm\:focus\:bg-gray-100:focus {
@@ -21541,6 +21932,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .sm\:border-accent-normal {
+    border-color: var(--text-accent-color);
+  }
+
+  .sm\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:border-muted-normal {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .sm\:border-gray-100 {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -22117,6 +22524,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .sm\:hover\:border-accent-normal:hover {
+    border-color: var(--text-accent-color);
+  }
+
+  .sm\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:border-muted-normal:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .sm\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -22691,6 +23114,22 @@ video {
 
   .sm\:focus\:border-header:focus {
     border-color: var(--header-background-color);
+  }
+
+  .sm\:focus\:border-accent-normal:focus {
+    border-color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:border-muted-normal:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .sm\:focus\:border-gray-100:focus {
@@ -26518,6 +26957,70 @@ video {
     color: var(--text-default-color);
   }
 
+  .sm\:placeholder-accent-normal::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:placeholder-accent-normal:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:placeholder-accent-normal::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:placeholder-accent-normal::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-accent-light::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-muted-normal::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted-normal:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted-normal::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted-normal::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:placeholder-muted-light::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .sm\:placeholder-gray-100::-moz-placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -28836,6 +29339,70 @@ video {
 
   .sm\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-accent-normal:focus::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:placeholder-accent-normal:focus:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:placeholder-accent-normal:focus::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:placeholder-accent-normal:focus::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted-normal:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted-normal:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted-normal:focus::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted-normal:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-moz-placeholder {
@@ -31473,6 +32040,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .sm\:text-accent-normal {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:text-muted-normal {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .sm\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -32053,6 +32636,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .sm\:hover\:text-accent-normal:hover {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:text-muted-normal:hover {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .sm\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -32631,6 +33230,22 @@ video {
 
   .sm\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .sm\:focus\:text-accent-normal:focus {
+    color: var(--text-accent-color);
+  }
+
+  .sm\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:text-muted-normal:focus {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .sm\:focus\:text-gray-100:focus {
@@ -36698,6 +37313,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .md\:divide-accent-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-color);
+  }
+
+  .md\:divide-accent-light > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:divide-muted-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:divide-muted-light > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .md\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -37362,6 +37993,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .md\:bg-accent-normal {
+    background-color: var(--text-accent-color);
+  }
+
+  .md\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:bg-muted-normal {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .md\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -37942,6 +38589,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .md\:hover\:bg-accent-normal:hover {
+    background-color: var(--text-accent-color);
+  }
+
+  .md\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:bg-muted-normal:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .md\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -38520,6 +39183,22 @@ video {
 
   .md\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .md\:focus\:bg-accent-normal:focus {
+    background-color: var(--text-accent-color);
+  }
+
+  .md\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:bg-muted-normal:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .md\:focus\:bg-gray-100:focus {
@@ -39238,6 +39917,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .md\:border-accent-normal {
+    border-color: var(--text-accent-color);
+  }
+
+  .md\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:border-muted-normal {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .md\:border-gray-100 {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -39814,6 +40509,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .md\:hover\:border-accent-normal:hover {
+    border-color: var(--text-accent-color);
+  }
+
+  .md\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:border-muted-normal:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .md\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -40388,6 +41099,22 @@ video {
 
   .md\:focus\:border-header:focus {
     border-color: var(--header-background-color);
+  }
+
+  .md\:focus\:border-accent-normal:focus {
+    border-color: var(--text-accent-color);
+  }
+
+  .md\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:border-muted-normal:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .md\:focus\:border-gray-100:focus {
@@ -44215,6 +44942,70 @@ video {
     color: var(--text-default-color);
   }
 
+  .md\:placeholder-accent-normal::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:placeholder-accent-normal:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:placeholder-accent-normal::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:placeholder-accent-normal::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-accent-light::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-muted-normal::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted-normal:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted-normal::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted-normal::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:placeholder-muted-light::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .md\:placeholder-gray-100::-moz-placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -46533,6 +47324,70 @@ video {
 
   .md\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-accent-normal:focus::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:focus\:placeholder-accent-normal:focus:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:focus\:placeholder-accent-normal:focus::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:focus\:placeholder-accent-normal:focus::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-muted-normal:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted-normal:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted-normal:focus::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted-normal:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .md\:focus\:placeholder-gray-100:focus::-moz-placeholder {
@@ -49170,6 +50025,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .md\:text-accent-normal {
+    color: var(--text-accent-color);
+  }
+
+  .md\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:text-muted-normal {
+    color: var(--text-muted-color);
+  }
+
+  .md\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .md\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -49750,6 +50621,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .md\:hover\:text-accent-normal:hover {
+    color: var(--text-accent-color);
+  }
+
+  .md\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:text-muted-normal:hover {
+    color: var(--text-muted-color);
+  }
+
+  .md\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .md\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -50328,6 +51215,22 @@ video {
 
   .md\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .md\:focus\:text-accent-normal:focus {
+    color: var(--text-accent-color);
+  }
+
+  .md\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:text-muted-normal:focus {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .md\:focus\:text-gray-100:focus {
@@ -54395,6 +55298,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .lg\:divide-accent-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-color);
+  }
+
+  .lg\:divide-accent-light > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:divide-muted-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:divide-muted-light > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .lg\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -55059,6 +55978,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .lg\:bg-accent-normal {
+    background-color: var(--text-accent-color);
+  }
+
+  .lg\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:bg-muted-normal {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .lg\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -55639,6 +56574,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .lg\:hover\:bg-accent-normal:hover {
+    background-color: var(--text-accent-color);
+  }
+
+  .lg\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:bg-muted-normal:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .lg\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -56217,6 +57168,22 @@ video {
 
   .lg\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:bg-accent-normal:focus {
+    background-color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:bg-muted-normal:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .lg\:focus\:bg-gray-100:focus {
@@ -56935,6 +57902,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .lg\:border-accent-normal {
+    border-color: var(--text-accent-color);
+  }
+
+  .lg\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:border-muted-normal {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .lg\:border-gray-100 {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -57511,6 +58494,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .lg\:hover\:border-accent-normal:hover {
+    border-color: var(--text-accent-color);
+  }
+
+  .lg\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:border-muted-normal:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .lg\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -58085,6 +59084,22 @@ video {
 
   .lg\:focus\:border-header:focus {
     border-color: var(--header-background-color);
+  }
+
+  .lg\:focus\:border-accent-normal:focus {
+    border-color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:border-muted-normal:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .lg\:focus\:border-gray-100:focus {
@@ -61912,6 +62927,70 @@ video {
     color: var(--text-default-color);
   }
 
+  .lg\:placeholder-accent-normal::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:placeholder-accent-normal:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:placeholder-accent-normal::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:placeholder-accent-normal::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-accent-light::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-muted-normal::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted-normal:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted-normal::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted-normal::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:placeholder-muted-light::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .lg\:placeholder-gray-100::-moz-placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -64230,6 +65309,70 @@ video {
 
   .lg\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-accent-normal:focus::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:placeholder-accent-normal:focus:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:placeholder-accent-normal:focus::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:placeholder-accent-normal:focus::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted-normal:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted-normal:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted-normal:focus::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted-normal:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-moz-placeholder {
@@ -66867,6 +68010,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .lg\:text-accent-normal {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:text-muted-normal {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .lg\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -67447,6 +68606,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .lg\:hover\:text-accent-normal:hover {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:text-muted-normal:hover {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .lg\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -68025,6 +69200,22 @@ video {
 
   .lg\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .lg\:focus\:text-accent-normal:focus {
+    color: var(--text-accent-color);
+  }
+
+  .lg\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:text-muted-normal:focus {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .lg\:focus\:text-gray-100:focus {
@@ -72092,6 +73283,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .xl\:divide-accent-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-color);
+  }
+
+  .xl\:divide-accent-light > :not(template) ~ :not(template) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:divide-muted-normal > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:divide-muted-light > :not(template) ~ :not(template) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .xl\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -72756,6 +73963,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .xl\:bg-accent-normal {
+    background-color: var(--text-accent-color);
+  }
+
+  .xl\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:bg-muted-normal {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .xl\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -73336,6 +74559,22 @@ video {
     background-color: var(--text-default-color);
   }
 
+  .xl\:hover\:bg-accent-normal:hover {
+    background-color: var(--text-accent-color);
+  }
+
+  .xl\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:bg-muted-normal:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .xl\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -73914,6 +75153,22 @@ video {
 
   .xl\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:bg-accent-normal:focus {
+    background-color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:bg-muted-normal:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .xl\:focus\:bg-gray-100:focus {
@@ -74632,6 +75887,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .xl\:border-accent-normal {
+    border-color: var(--text-accent-color);
+  }
+
+  .xl\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:border-muted-normal {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .xl\:border-gray-100 {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -75208,6 +76479,22 @@ video {
     border-color: var(--header-background-color);
   }
 
+  .xl\:hover\:border-accent-normal:hover {
+    border-color: var(--text-accent-color);
+  }
+
+  .xl\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:border-muted-normal:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .xl\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -75782,6 +77069,22 @@ video {
 
   .xl\:focus\:border-header:focus {
     border-color: var(--header-background-color);
+  }
+
+  .xl\:focus\:border-accent-normal:focus {
+    border-color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:border-muted-normal:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .xl\:focus\:border-gray-100:focus {
@@ -79609,6 +80912,70 @@ video {
     color: var(--text-default-color);
   }
 
+  .xl\:placeholder-accent-normal::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:placeholder-accent-normal:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:placeholder-accent-normal::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:placeholder-accent-normal::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-accent-light::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-muted-normal::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted-normal:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted-normal::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted-normal::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:placeholder-muted-light::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .xl\:placeholder-gray-100::-moz-placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -81927,6 +83294,70 @@ video {
 
   .xl\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-accent-normal:focus::-moz-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:placeholder-accent-normal:focus:-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:placeholder-accent-normal:focus::-ms-input-placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:placeholder-accent-normal:focus::placeholder {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus::-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted-normal:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted-normal:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted-normal:focus::-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted-normal:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus::-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-moz-placeholder {
@@ -84564,6 +85995,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .xl\:text-accent-normal {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:text-muted-normal {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .xl\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -85144,6 +86591,22 @@ video {
     color: var(--text-default-color);
   }
 
+  .xl\:hover\:text-accent-normal:hover {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:text-muted-normal:hover {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .xl\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -85722,6 +87185,22 @@ video {
 
   .xl\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .xl\:focus\:text-accent-normal:focus {
+    color: var(--text-accent-color);
+  }
+
+  .xl\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:text-muted-normal:focus {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .xl\:focus\:text-gray-100:focus {

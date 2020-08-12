@@ -23,6 +23,14 @@ module.exports = {
             button: 'var(--button-background-color)',
             header: 'var(--header-background-color)',
             default: 'var(--text-default-color)',
+            accent: {
+                normal: 'var(--text-accent-color)',
+                light: 'var(--text-accent-light-color)'
+            },
+            muted: {
+                normal: 'var(--text-muted-color)',
+                light: 'var(--text-muted-light-color)'
+            },
 
             gray: {
                 100: '#f7fafc',
