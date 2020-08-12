@@ -17,16 +17,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
-<body class="theme-dark bg-page">
+<body class="theme-light bg-page">
     <div id="app">
         <nav class="bg-header section">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center py-2">
                     <a class="navbar-brand" href="{{ url('/') }}">
-{{--                        <img src="/images/feather.svg" alt="Birdboard" style="height: 40px">--}}
                         <svg xmlns="http://www.w3.org/2000/svg" width="291" height="45" viewBox="0 0 291 45" class="text-default relative" style="top: 2px">
                             <g fill="none" fill-rule="evenodd">
                                 <g class="fill-current">
@@ -43,37 +41,32 @@
 
                     <div>
                         <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ml-auto">
+                        <div class="flex items-center ml-auto">
                             <!-- Authentication Links -->
                             @guest
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 @if (Route::has('register'))
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                    </li>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @else
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }} <span class="caret"></span>
-                                    </a>
+                                <theme-switcher></theme-switcher>
 
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </li>
+                                <a href="#"
+                                   class="flex items-center text-default no-underline text-sm"
+                                   role="button"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"
+                                   v-pre
+                                >
+                                    <img src="{{ gavatar_url(auth()->user()->email) }}"
+                                         width="35"
+                                         class="rounded-full mr-3"
+                                    >
+                                    Avutzhan
+                                </a>
                             @endguest
-                        </ul>
+                        </div>
                     </div>
 
                 </div>
