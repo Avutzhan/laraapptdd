@@ -23,6 +23,7 @@ module.exports = {
             button: 'var(--button-background-color)',
             header: 'var(--header-background-color)',
             default: 'var(--text-default-color)',
+            error: 'var(--text-error-color)',
             accent: {
                 normal: 'var(--text-accent-color)',
                 light: 'var(--text-accent-light-color)'
