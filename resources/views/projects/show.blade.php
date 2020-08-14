@@ -61,6 +61,20 @@
                         <button type="submit" class="button">Save</button>
                     </form>
 
+
+{{--                    <dropdown width="100%">--}}
+{{--                        <template v-slot:trigger>--}}
+{{--                            <a href="#">Click me</a>--}}
+{{--                        </template>--}}
+
+{{--                        <template v-slot:default>--}}
+{{--                            <a href="#" class="block text-default no-underline hover:underline text-sm leading-loose px-4">Item 1</a>--}}
+{{--                            <a href="#" class="block text-default no-underline hover:underline text-sm leading-loose px-4">Item 2</a>--}}
+{{--                            <a href="#" class="block text-default no-underline hover:underline text-sm leading-loose px-4">Item 3</a>--}}
+{{--                        </template>--}}
+
+{{--                    </dropdown>--}}
+
                     @include('errors')
                 </div>
 
